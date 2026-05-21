@@ -2,14 +2,15 @@
 
 ## Screenshots
 
+## Screenshots
+
 ### Home Page
+
 ![Home](assets/screenshots/home.png)
 
-### Prediction Result
-![Prediction](assets/screenshots/prediction.png)
+### Prediction Result + Heatmap
 
-### Heatmap
-![Heatmap](assets/screenshots/heatmap.png)
+![Prediction](assets/screenshots/prediction.png)
 
 ## Live Demo
 
