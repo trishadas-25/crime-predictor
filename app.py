@@ -20,7 +20,7 @@ st.write(
     "Predict crime patterns and visualize hotspots across India"
 )
 
-# ---------- INPUTS ----------
+# inputs
 
 age = st.slider(
     "Victim Age",
@@ -50,7 +50,7 @@ sample = pd.DataFrame(
     ]
 )
 
-# ---------- PREDICTION ----------
+# prediction
 
 if st.button("Predict Crime"):
 
@@ -100,7 +100,7 @@ Area appears relatively safer
         advice
     )
 
-# ---------- HEATMAP ----------
+#heatmap
 
 st.divider()
 

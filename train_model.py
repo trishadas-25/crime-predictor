@@ -1,36 +1,39 @@
 import pandas as pd
-from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 import joblib
+import os
 
 crime = pd.read_csv("data/cleaned.csv")
 
-# Features
-X = crime[[
-    "Victim Age",
-    "month",
-    "hour"
-]]
+X = crime[
+    [
+        "Victim Age",
+        "month",
+        "hour"
+    ]
+]
 
-# Target
-y = crime["Crime Description"]
+y = crime["Crime Code"]
 
-# Split
-xtrain, xtest, ytrain, ytest = train_test_split(
-    X,
-    y,
-    test_size=0.2,
+
+model = RandomForestClassifier(
+    n_estimators=20,
+    max_depth=5,
     random_state=42
 )
 
-# Model
-model = RandomForestClassifier()
+model.fit(X, y)
 
-model.fit(xtrain, ytrain)
+# create models folder if missing
+os.makedirs(
+    "models",
+    exist_ok=True
+)
 
 joblib.dump(
     model,
-    "models/crime_model.pkl"
+    "models/crime_model.pkl",
+    compress=3
 )
 
 print("model saved")
