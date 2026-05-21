@@ -1,5 +1,9 @@
 # AI-Powered Crime Prediction and Geographic Heatmap System
 
+## Live Demo
+
+https://crime-predictor-trisha.streamlit.app/
+
 ## Live App
 
 https://crime-predictor-trisha.streamlit.app/
