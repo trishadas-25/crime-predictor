@@ -1,5 +1,16 @@
 # AI-Powered Crime Prediction and Geographic Heatmap System
 
+## Screenshots
+
+### Home Page
+![Home](assets/screenshots/home.png)
+
+### Prediction Result
+![Prediction](assets/screenshots/prediction.png)
+
+### Heatmap
+![Heatmap](assets/screenshots/heatmap.png)
+
 ## Live Demo
 
 https://crime-predictor-trisha.streamlit.app/
