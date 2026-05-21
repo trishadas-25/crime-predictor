@@ -2,7 +2,6 @@
 
 ## Screenshots
 
-## Screenshots
 
 ### Home Page
 
